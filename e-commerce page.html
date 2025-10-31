@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CU-Online store</title>
+    <link rel="stylesheet" href="e-cmmerce.css">
+</head>
+<body>
+
+    
+    <header>
+        <div class="head">
+            <h1>CU ONLINE STORE</h1>
+        </div>
+       
+    </header>
+
+   
+    <div class="banner">
+        <h2>Welcome to Our Store!</h2>
+        <p>Great products at amazing prices</p>
+    </div>
+
+ 
+    <div class="container">
+        <h2>Our Products</h2>
+
+        
+        <div class="products-grid">
+
+           
+            <div class="product-card">
+                <div class="product-image">
+                    <img class="docs" src="images/docs.jpg">
+                </div>
+                <h3>Doc Martens</h3>
+                <p>Comfortable shoes for daily wear</p>
+                <div class="price">₦35,000</div>
+                <button class="buy-button" onclick="addToCart('Doc Martens', '₦35,000')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img class="docs" src="images/polo ralph.jpg">
+                </div>
+                <h3>T-Shirt</h3>
+                <p>Polo Ralph White shirts</p>
+                <div class="price">₦8,500</div>
+               <button class="buy-button" onclick="addToCart('Polo Ralph T-Shirt', '₦8,500')">Add to Cart</button>
+
+
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                     <img class="docs" src="images/bag.jpg">
+                </div>
+                <h3>Handbag</h3>
+                <p>Diesel bags</p>
+                <div class="price">₦22,000</div>
+                <button class="buy-button" onclick="addToCart('Diesel Handbag', '₦22,000')">Add to Cart</button>
+
+
+            </div>
+
+            
+            <div class="product-card">
+                <div class="product-image">
+                     <img class="docs" src="images/dw.jpg">
+                </div>
+                <h3>Watch</h3>
+                <p>Stylish watch for everyday use</p>
+                <div class="price">₦45,000</div>
+              <button class="buy-button" onclick="addToCart('DW Watch', '₦45,000')">Add to Cart</button>
+
+            </div>
+
+           
+            <div class="product-card">
+                <div class="product-image">
+                     <img class="docs" src="images/airpods.jpg">
+                </div>
+                <h3>Headphones</h3>
+                <p>Airpods</p>
+                <div class="price">₦32,000</div>
+                <button class="buy-button" onclick="addToCart('Apple Airpods', '₦32,000')">Add to Cart</button>
+               
+
+            </div>
+
+            
+            <div class="product-card">
+                <div class="product-image">
+                     <img class="docs" src="images/ipad.jpg">
+                </div>
+                <h3>Apple Product</h3>
+                <p>IPAD pro</p>
+                <div class="price">₦1,500,000</div>
+                <button class="buy-button" onclick="addToCart('iPad Pro', '₦1,500,000')">Add to Cart</button>
+
+
+        </div>
+    </div>
+
+
+    <script>
+        function addToCart(productName, price) {
+         
+         const product = { name: productName, price: price };
+         localStorage.setItem('selectedProduct', JSON.stringify(product));
+
+            
+         window.location.href = 'cart.html';
+  }
+</script>
+
+
+   
+    <footer>
+        <p>&copy; 2025 My Online Shop. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
